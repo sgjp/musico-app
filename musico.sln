@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "musico", "musico\musico.csproj", "{8C7F4BBB-5BC8-42D2-9705-3C92A22DE682}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Musico.Droid", "musico\Musico.Droid.csproj", "{8C7F4BBB-5BC8-42D2-9705-3C92A22DE682}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Musico", "musico\Musico.shproj", "{9B3D1020-34CA-412C-875E-4AC73765C82C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

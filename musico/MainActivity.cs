@@ -1,18 +1,24 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Musico;
+using System.Collections.Generic;
+using System;
 
 namespace musico
 {
 	[Activity (Label = "musico", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+		
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
 
+			test ();
+
+			/*
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
@@ -23,6 +29,14 @@ namespace musico
 			button.Click += delegate {
 				button.Text = string.Format ("{0} clicks!", count++);
 			};
+			*/
+		}
+
+		public async void test(){
+			IList<Band> bandList = MusicoConnUtil.GetAllBandsAsync ();
+
+			Console.WriteLine (bandList.ToString());
+
 		}
 	}
 }
