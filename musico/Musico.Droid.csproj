@@ -82,4 +82,8 @@
   </ItemGroup>
   <Import Project="Musico.projitems" Label="Shared" Condition="Exists('Musico.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Logo.png" />
+    <AndroidAsset Include="Assets\LogoSmall.png" />
+  </ItemGroup>
 </Project>

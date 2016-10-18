@@ -1,5 +1,5 @@
 ﻿using System;
-using Java.Util;
+
 
 namespace Musico
 {
@@ -9,7 +9,7 @@ namespace Musico
 
 		public string Description { get; set;}
 
-		public Date Date { get; set;}
+		public DateTime Date { get; set;}
 
 		public Booking ()
 		{

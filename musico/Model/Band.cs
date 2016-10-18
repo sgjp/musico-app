@@ -28,19 +28,19 @@ namespace Musico
 		public string Location {get; set;}
 
 		[JsonProperty(PropertyName = "avgPrice",NullValueHandling=NullValueHandling.Ignore)]
-		public int AvgPrice {get; set;}
+		public float AvgPrice {get; set;}
 
 		[JsonProperty(PropertyName = "reviews",NullValueHandling=NullValueHandling.Ignore)]
 		public IList<Review> Reviews { get; set;}
 
 		[JsonProperty(PropertyName = "comments",NullValueHandling=NullValueHandling.Ignore)]
-		public IList<Review> Comments { get; set;}
+		public IList<Comment> Comments { get; set;}
 
 		[JsonProperty(PropertyName = "bookings",NullValueHandling=NullValueHandling.Ignore)]
-		public IList<Review> Bookings { get; set;}
+		public IList<Booking> Bookings { get; set;}
 
 		[JsonProperty(PropertyName = "avgRate",NullValueHandling=NullValueHandling.Ignore)]
-		public int AvgRate {get; set;}
+		public float AvgRate {get; set;}
 
 		public Band ()
 		{

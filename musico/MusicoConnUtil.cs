@@ -17,7 +17,7 @@ namespace Musico
 		public static async Task<IList<Band>> GetAllBandsAsync ()
 		{
 			IList<Band> bandList;
-			HttpResponseMessage response = await MakeServerGetRequest (Globals.BANDS);
+			HttpResponseMessage response = MakeServerGetRequest (Globals.BANDS);
 
 			if (response.IsSuccessStatusCode){
 				bandList = JsonConvert.DeserializeObject <IList<Band>> (response.Content.ReadAsStringAsync ().Result);
@@ -29,7 +29,7 @@ namespace Musico
 		}
 
 
-		private static Task<HttpResponseMessage> MakeServerGetRequest (string url)
+		private static HttpResponseMessage MakeServerGetRequest (string url)
 		{
 			HttpClient client = new HttpClient ();
 			client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
