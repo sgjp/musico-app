@@ -7,7 +7,7 @@ using System;
 
 namespace musico
 {
-	[Activity (Label = "musico", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity (Label = "musico", Icon = "@mipmap/logosmall")]
 	public class MainActivity : Activity
 	{
 		
@@ -16,7 +16,7 @@ namespace musico
 		{
 			base.OnCreate (savedInstanceState);
 
-			test ();
+			//test ();
 
 			/*
 			// Set our view from the "main" layout resource
@@ -33,9 +33,9 @@ namespace musico
 		}
 
 		public async void test(){
-			IList<Band> bandList = await MusicoConnUtil.GetAllBandsAsync ();
+			//IList<Band> bandList = await MusicoConnUtil.GetAllBandsAsync ();
 
-			Console.WriteLine (bandList.ToString());
+			//Console.WriteLine (bandList.ToString());
 
 		}
 	}

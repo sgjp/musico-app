@@ -23,6 +23,10 @@ namespace Musico
 
 		public static string BAND_BOOKING = "/booking";
 
+		//User
+
+		public static string AUTH = BASE_URL + "/auth/login";
+
 	}
 }
 

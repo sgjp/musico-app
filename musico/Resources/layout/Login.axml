@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="#ffffffff">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="28.0dip"
+            android:layout_marginRight="28.0dip">
+            <EditText
+                android:id="@+id/login_accounts"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:background="#00ffffff"
+                android:hint="Email:"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="12.0dip"
+                android:textColor="#000000"
+                android:textColorHint="#3C3C3C"
+                android:textSize="16.0sp" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:background="#00ffffff"
+                android:gravity="center_vertical"
+                android:hint="Password:"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:paddingLeft="12.0dip"
+                android:textColor="#000000"
+                android:textColorHint="#ff3c3c3c"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_logininfo"
+            android:orientation="horizontal"
+            android:layout_marginLeft="28.0dip"
+            android:layout_marginRight="28.0dip">
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="Login"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="#ff424242"
+                android:maxHeight="50dp"
+                android:minHeight="50dp" />
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="Cancel"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="#ff424242"
+                android:maxHeight="50dp"
+                android:minHeight="50dp" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input"
+            android:layout_marginTop="6.0dip"
+            android:gravity="center"
+            android:paddingTop="5.0dip"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="18.0sp"
+            android:id="@+id/btn_signup"
+            android:layout_marginLeft="28.0dip"
+            android:layout_marginRight="28.0dip"
+            android:background="#ff424242"
+            android:maxHeight="50dp"
+            android:minHeight="50dp" />
+    </LinearLayout>
+</LinearLayout>

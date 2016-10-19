@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Java.Util;
 using System.Net.Http.Headers;
+using System.Json;
+using System.Text;
 
 namespace Musico
 {
@@ -14,7 +16,7 @@ namespace Musico
 	{
 
 
-		public static async Task<IList<Band>> GetAllBandsAsync ()
+		public static IList<Band> GetAllBandsAsync ()
 		{
 			IList<Band> bandList;
 			HttpResponseMessage response = MakeServerGetRequest (Globals.BANDS);
@@ -27,6 +29,32 @@ namespace Musico
 			return null;
 
 		}
+
+		public static async Task<int> AuthenticateUser(string email, string pass){
+			int result;
+			User user = new User();
+			user.Password=pass;
+			user.Username=email;
+
+			var jsonUser = JsonConvert.SerializeObject (user);
+			var content = new StringContent (jsonUser, Encoding.UTF8, "application/json");
+
+			HttpResponseMessage response = null;
+			response = await MakeServerPostRequest(Globals.AUTH,content);
+
+			if ( response.StatusCode==HttpStatusCode.NotFound){
+				return -1;
+			}else{
+				JsonValue resultJson = JsonObject.Parse (response.Content.ReadAsStringAsync ().Result);
+				try{
+					result = Int32.Parse(resultJson["id"]);
+				}catch(KeyNotFoundException){
+					result = -1;
+				}		
+				return result;
+			}
+
+		} 
 
 
 		private static HttpResponseMessage MakeServerGetRequest (string url)
@@ -76,7 +104,7 @@ namespace Musico
 				throw new WebException ("Error connecting to the server: " + url + " Status code: " + ((HttpWebResponse)e.Response).StatusCode);
 			}
 
-			if ((int)response.StatusCode == 500 || (int)response.StatusCode == 401 || (int)response.StatusCode == 403 || (int)response.StatusCode == 404 || (int)response.StatusCode == 502 || (int)response.StatusCode == 503 || (int)response.StatusCode == 504) {
+			if ((int)response.StatusCode == 500 || (int)response.StatusCode == 401 || (int)response.StatusCode == 403 || (int)response.StatusCode == 502 || (int)response.StatusCode == 503 || (int)response.StatusCode == 504) {
 				throw new WebException ("Error connecting to the server. Status code: " + response.StatusCode);
 			}
 			return response;

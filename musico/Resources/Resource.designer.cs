@@ -798,6 +798,12 @@ namespace musico
 			// aapt resource value: 0x7f020056
 			public const int abc_textfield_searchview_right_holo_light = 2130837590;
 			
+			// aapt resource value: 0x7f020057
+			public const int Logo = 2130837591;
+			
+			// aapt resource value: 0x7f020058
+			public const int LogoSmall = 2130837592;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -853,6 +859,15 @@ namespace musico
 			// aapt resource value: 0x7f0a0016
 			public const int beginning = 2131361814;
 			
+			// aapt resource value: 0x7f0a0043
+			public const int btn_cancel = 2131361859;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int btn_login = 2131361858;
+			
+			// aapt resource value: 0x7f0a0044
+			public const int btn_signup = 2131361860;
+			
 			// aapt resource value: 0x7f0a002d
 			public const int checkbox = 2131361837;
 			
@@ -898,17 +913,35 @@ namespace musico
 			// aapt resource value: 0x7f0a0027
 			public const int image = 2131361831;
 			
+			// aapt resource value: 0x7f0a003d
+			public const int imageView1 = 2131361853;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int input = 2131361854;
+			
 			// aapt resource value: 0x7f0a0006
 			public const int listMode = 2131361798;
 			
 			// aapt resource value: 0x7f0a0029
 			public const int list_item = 2131361833;
 			
+			// aapt resource value: 0x7f0a0041
+			public const int ll_logininfo = 2131361857;
+			
+			// aapt resource value: 0x7f0a003f
+			public const int login_accounts = 2131361855;
+			
+			// aapt resource value: 0x7f0a0040
+			public const int login_password = 2131361856;
+			
+			// aapt resource value: 0x7f0a003c
+			public const int loginpage = 2131361852;
+			
 			// aapt resource value: 0x7f0a0018
 			public const int middle = 2131361816;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int myButton = 2131361852;
+			// aapt resource value: 0x7f0a0045
+			public const int myButton = 2131361861;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int never = 2131361810;
@@ -1096,10 +1129,13 @@ namespace musico
 			public const int abc_simple_decor = 2130968599;
 			
 			// aapt resource value: 0x7f040018
-			public const int Main = 2130968600;
+			public const int Login = 2130968600;
 			
 			// aapt resource value: 0x7f040019
-			public const int support_simple_spinner_dropdown_item = 2130968601;
+			public const int Main = 2130968601;
+			
+			// aapt resource value: 0x7f04001a
+			public const int support_simple_spinner_dropdown_item = 2130968602;
 			
 			static Layout()
 			{
@@ -1116,6 +1152,12 @@ namespace musico
 			
 			// aapt resource value: 0x7f030000
 			public const int Icon = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Logo = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int LogoSmall = 2130903042;
 			
 			static Mipmap()
 			{
