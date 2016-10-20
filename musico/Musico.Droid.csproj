@@ -64,6 +64,9 @@
     <Compile Include="Activities\LoginActivity.cs" />
     <Compile Include="Utils\Utils.cs" />
     <Compile Include="Utils\DialogFactory.cs" />
+    <Compile Include="Activities\HomeActivity.cs" />
+    <Compile Include="Activities\Search.cs" />
+    <Compile Include="Activities\Detail.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -92,6 +95,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Logo.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\LogoSmall.png" />
     <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\layout\Home.axml" />
+    <AndroidResource Include="Resources\layout\Search.axml" />
+    <AndroidResource Include="Resources\layout\Detail.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

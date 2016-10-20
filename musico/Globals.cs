@@ -5,7 +5,7 @@ namespace Musico
 	public static class Globals
 	{
 		//Base
-		public static string BASE_URL = "https://musico-js.herokuapp.com";
+		public static string BASE_URL = "http://10.81.4.5:8080";
 
 		//Bands
 		public static string BANDS = BASE_URL + "/bands";

@@ -46,6 +46,10 @@ namespace musico
 			btnLogin.Click += BtnLogin_Click;
 			btnCancel.Click += BtnCancel_Click;
 			btnSignup.Click += BtnSignup_Click;
+
+			//TODO del:
+			login_accounts.Text = "test@mail.com";
+			login_password.Text ="test";
 		}
 
 		void BtnCancel_Click (object sender, EventArgs e)
@@ -69,12 +73,10 @@ namespace musico
 					//check email
 					Match match = Regex.Match (email, "^(\\w)+(\\.\\w+)*@(\\w)+((\\.\\w{2,3}){1,3})$");
 					if (match.Success) {
-						//Modal
 
 						ll_loginpage.Alpha = 0.5f;
 
-						//check email and password to server
-						try {
+					try {
 							result = await MusicoConnUtil.AuthenticateUser(email, password);
 						} catch (Exception ex) {
 							ll_loginpage.Alpha = 1.0f;
@@ -85,15 +87,15 @@ namespace musico
 							});
 							ab.Create ().Show ();
 						}
-							if (result != null && result != -1) {
-								//login successfully
-								//remember me?
+
+							if (result != null && result >0 ) {
+								//login successfull
 
 								Toast.MakeText (this, "Login successfull!", ToastLength.Short).Show ();
-								//Intent intent = new Intent (this, typeof(HomeActivity));
-								//intent.PutExtra ("email", email);
-								//intent.PutExtra ("id", result.Item2);
-								//StartActivity (intent);
+								Intent intent = new Intent (this, typeof(HomeActivity));
+								intent.PutExtra ("email", email);
+								intent.PutExtra ("id", result);
+								StartActivity (intent);
 								Finish ();
 							} else {
 								ll_loginpage.Alpha = 1.0f;

@@ -9,6 +9,7 @@ using Java.Util;
 using System.Net.Http.Headers;
 using System.Json;
 using System.Text;
+using Newtonsoft.Json.Linq;
 
 namespace Musico
 {
@@ -32,12 +33,13 @@ namespace Musico
 
 		public static async Task<int> AuthenticateUser(string email, string pass){
 			int result;
-			User user = new User();
-			user.Password=pass;
-			user.Username=email;
 
-			var jsonUser = JsonConvert.SerializeObject (user);
-			var content = new StringContent (jsonUser, Encoding.UTF8, "application/json");
+			var values = new Dictionary<string, string> {
+				{ "username", email },
+				{ "password", pass }
+			};
+
+			var content = new FormUrlEncodedContent (values);
 
 			HttpResponseMessage response = null;
 			response = await MakeServerPostRequest(Globals.AUTH,content);
@@ -45,12 +47,10 @@ namespace Musico
 			if ( response.StatusCode==HttpStatusCode.NotFound){
 				return -1;
 			}else{
-				JsonValue resultJson = JsonObject.Parse (response.Content.ReadAsStringAsync ().Result);
-				try{
-					result = Int32.Parse(resultJson["id"]);
-				}catch(KeyNotFoundException){
-					result = -1;
-				}		
+				JObject resultJson = JObject.Parse (response.Content.ReadAsStringAsync ().Result);
+
+				result = Int32.Parse(resultJson.GetValue ("id").ToString());
+
 				return result;
 			}
 
@@ -85,7 +85,7 @@ namespace Musico
 
 		}
 
-		private static async Task<HttpResponseMessage> MakeServerPostRequest (string url, StringContent content)
+		private static async Task<HttpResponseMessage> MakeServerPostRequest (string url, FormUrlEncodedContent content)
 		{
 			HttpClient client = new HttpClient ();
 			client.MaxResponseContentBufferSize = 256000;
@@ -107,6 +107,7 @@ namespace Musico
 			if ((int)response.StatusCode == 500 || (int)response.StatusCode == 401 || (int)response.StatusCode == 403 || (int)response.StatusCode == 502 || (int)response.StatusCode == 503 || (int)response.StatusCode == 504) {
 				throw new WebException ("Error connecting to the server. Status code: " + response.StatusCode);
 			}
+			Console.WriteLine ("----RETURNING FROM POST: "+response.Content.ReadAsStringAsync ().Result.ToString());
 			return response;
 
 		}
