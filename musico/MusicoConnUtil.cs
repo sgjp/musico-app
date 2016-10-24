@@ -10,12 +10,51 @@ using System.Net.Http.Headers;
 using System.Json;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using System.Collections.Specialized;
 
 namespace Musico
 {
 	public class MusicoConnUtil
 	{
 
+
+		public static IList<Band> SearchBandsAsync (string location, string genre, int minPrice, int maxPrice, int minAvgRate, DateTime availableDate)
+		{
+			IList<Band> bandList;
+			HttpResponseMessage response;
+
+			NameValueCollection values = System.Web.HttpUtility.ParseQueryString(string.Empty);
+
+
+			if (location != null)
+				values ["location"] = location;
+			if (genre != null)
+				values ["genre"] = genre;
+			if (minPrice >= 0)
+				values ["minPrice"] = minPrice.ToString();
+			if (maxPrice > 0)
+				values ["maxPrice"] = maxPrice.ToString();
+			if (minAvgRate > 0)
+				values ["minRate"] = minAvgRate.ToString();
+
+			values ["availableDate"] = availableDate.ToString ("yyyy-MM-dd");
+				
+			
+			if (values.Count > 0){
+				 response = MakeServerGetRequest (Globals.BANDS_SEARCH+"?"+values.ToString());
+			}else{
+				 response = MakeServerGetRequest (Globals.BANDS);
+			}
+
+
+			if (response.IsSuccessStatusCode){
+				bandList = JsonConvert.DeserializeObject <IList<Band>> (response.Content.ReadAsStringAsync ().Result);
+				return bandList;
+			}
+
+			return null;
+
+		}
 
 		public static IList<Band> GetAllBandsAsync ()
 		{
@@ -111,6 +150,7 @@ namespace Musico
 			return response;
 
 		}
+
 
 
 

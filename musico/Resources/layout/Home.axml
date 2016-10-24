@@ -14,15 +14,27 @@
         android:background="#ff00b0ff"
         android:gravity="center">
         <Button
-            android:text="Button"
+            android:text="Home"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/button1" />
+            android:id="@+id/homeButton" />
+        <TextView
+            android:text="Are you looking for an artist?"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            android:textColor="#fff5f5f5"
+            android:textSize="17dp"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:gravity="center" />
         <Button
-            android:text="Button"
+            android:text="Search"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/button2" />
+            android:id="@+id/searchButton"
+            android:layout_marginLeft="5dp" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
@@ -62,8 +74,11 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
                 android:layout_height="match_parent"
-                android:id="@+id/linearLayout5">
+                android:id="@+id/linearLayout5"
+                android:layout_weight="0.5">
                 <TextView
                     android:text="RECOMMENDED ARTISTS"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -71,14 +86,14 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/textView2"
                     android:textColor="#ffff5722"
-                    android:width="275dp"
-                    android:gravity="center" />
-                <Button
-                    android:text="Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button3"
-                    android:height="300dp" />
+                    android:gravity="center"
+                    android:paddingBottom="10dp" />
+                <ListView
+                    android:minHeight="300dp"
+                    android:id="@+id/reccomendedListView"
+                    android:layout_height="300dp"
+                    android:divider="#ff9e9e9e"
+                    android:layout_width="match_parent" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -86,7 +101,8 @@
                 android:minHeight="25px"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/linearLayout6">
+                android:id="@+id/linearLayout6"
+                android:layout_weight="0.5">
                 <TextView
                     android:text="TOP ARTISTS"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -94,13 +110,14 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/textView2"
                     android:textColor="#ffff5722"
-                    android:width="275dp"
-                    android:gravity="center" />
-                <Button
-                    android:text="Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button3" />
+                    android:gravity="center"
+                    android:paddingBottom="10dp" />
+                <ListView
+                    android:minHeight="300dp"
+                    android:id="@+id/TopListView"
+                    android:layout_height="300dp"
+                    android:divider="#ff9e9e9e"
+                    android:layout_width="match_parent" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout

@@ -78,7 +78,7 @@ namespace musico
 
 					try {
 							result = await MusicoConnUtil.AuthenticateUser(email, password);
-						} catch (Exception ex) {
+						} catch (Exception) {
 							ll_loginpage.Alpha = 1.0f;
 							AlertDialog.Builder ab = new AlertDialog.Builder (this);
 							ab.SetTitle ("Server busy");
@@ -88,7 +88,7 @@ namespace musico
 							ab.Create ().Show ();
 						}
 
-							if (result != null && result >0 ) {
+							if (result >0 ) {
 								//login successfull
 
 								Toast.MakeText (this, "Login successfull!", ToastLength.Short).Show ();
