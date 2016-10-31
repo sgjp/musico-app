@@ -52,11 +52,13 @@ namespace musico
 
 			topUsersList = MusicoConnUtil.GetTopUsers ();
 
-			string[] items = new string[topUsersList.Count];
 
-			int maxUsers = 4;
-			if (topUsersList.Count <= 4)
+
+			int maxUsers = 2 ;
+			if (topUsersList.Count <= 2)
 				maxUsers = topUsersList.Count-1;
+
+			string[] items = new string[maxUsers+1];
 
 			int startIndex = 0;
 			for (int i=maxUsers; i>=0; i--){

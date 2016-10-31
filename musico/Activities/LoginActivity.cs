@@ -48,7 +48,7 @@ namespace musico
 			btnSignup.Click += BtnSignup_Click;
 
 			//TODO del:
-			login_accounts.Text = "test@mail.com";
+			login_accounts.Text = "Juan";
 			login_password.Text ="test";
 		}
 
@@ -72,9 +72,9 @@ namespace musico
 				}else {
 					//check email
 					Match match = Regex.Match (email, "^(\\w)+(\\.\\w+)*@(\\w)+((\\.\\w{2,3}){1,3})$");
-					if (match.Success) {
+					//if (match.Success) {
 
-						ll_loginpage.Alpha = 0.5f;
+					ll_loginpage.Alpha = 0.5f;
 
 					try {
 							result = await MusicoConnUtil.AuthenticateUser(email, password);
@@ -103,10 +103,10 @@ namespace musico
 								DialogFactory.ToastDialog (this, "Login", "Username or password is not correct!", 0);//to do:specific error msg
 							}
 
-					} else {
-						ll_loginpage.Alpha = 1.0f;
-						DialogFactory.ToastDialog (this, "Login", "Email format is incorrent!", 0);
-					}
+					//} else {
+					//	ll_loginpage.Alpha = 1.0f;
+					//	DialogFactory.ToastDialog (this, "Login", "Email format is incorrent!", 0);
+					//}
 				}
 			} else {
 				DialogFactory.ToastDialog (this, "Connect Error", "There is no internet,please connect the internet!", 0);
