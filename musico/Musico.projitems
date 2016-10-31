@@ -17,6 +17,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Booking.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MusicoConnUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TopUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

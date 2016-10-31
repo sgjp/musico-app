@@ -67,8 +67,8 @@
     <Compile Include="Utils\DialogFactory.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
     <Compile Include="Activities\Search.cs" />
-    <Compile Include="Activities\Detail.cs" />
     <Compile Include="CustomListAdapter.cs" />
+    <Compile Include="Activities\DetailActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -102,6 +102,9 @@
     <AndroidResource Include="Resources\layout\Detail.axml" />
     <AndroidResource Include="Resources\drawable\bp.png" />
     <AndroidResource Include="Resources\layout\Row.axml" />
+    <AndroidResource Include="Resources\drawable\avatar.png" />
+    <AndroidResource Include="Resources\drawable\youtubeLogo.png" />
+    <AndroidResource Include="Resources\drawable\facebookLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

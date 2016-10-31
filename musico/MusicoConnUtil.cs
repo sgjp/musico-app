@@ -56,13 +56,27 @@ namespace Musico
 
 		}
 
-		public static IList<Band> GetAllBandsAsync ()
+		public static Band GetBandByNameAsync(string name)
 		{
-			IList<Band> bandList;
+			Band band;
+			HttpResponseMessage response = MakeServerGetRequest (Globals.BAND_BY_NAME+"?name="+name);
+
+			if (response.IsSuccessStatusCode){
+				band = JsonConvert.DeserializeObject <Band> (response.Content.ReadAsStringAsync ().Result);
+				return band;
+			}
+
+			return null;
+
+		}
+
+		public static List<Band> GetAllBandsAsync ()
+		{
+			List<Band> bandList;
 			HttpResponseMessage response = MakeServerGetRequest (Globals.BANDS);
 
 			if (response.IsSuccessStatusCode){
-				bandList = JsonConvert.DeserializeObject <IList<Band>> (response.Content.ReadAsStringAsync ().Result);
+				bandList = JsonConvert.DeserializeObject <List<Band>> (response.Content.ReadAsStringAsync ().Result);
 				return bandList;
 			}
 
@@ -94,6 +108,19 @@ namespace Musico
 			}
 
 		} 
+
+		public static List<TopUser> GetTopUsers(){
+			List<TopUser> topUserList;
+
+			HttpResponseMessage response = MakeServerGetRequest (Globals.TOP_USERS);
+
+			if (response.IsSuccessStatusCode){
+				topUserList = JsonConvert.DeserializeObject <List<TopUser>> (response.Content.ReadAsStringAsync ().Result);
+				return topUserList;
+			}
+
+			return null;
+		}
 
 
 		private static HttpResponseMessage MakeServerGetRequest (string url)

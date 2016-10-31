@@ -1,10 +1,11 @@
 ﻿using System;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using Android.Text.Style;
 
 namespace Musico
 {
-	public class Band
+	public class Band: IComparable<Band>
 	{
 		[JsonProperty(PropertyName = "id",NullValueHandling=NullValueHandling.Ignore)]
 		public string Id {get; set;}
@@ -41,6 +42,12 @@ namespace Musico
 
 		[JsonProperty(PropertyName = "avgRate",NullValueHandling=NullValueHandling.Ignore)]
 		public float AvgRate {get; set;}
+
+
+		public int CompareTo(Band band)
+		{
+			return this.AvgRate.CompareTo(band.AvgRate);
+		}
 
 		public Band ()
 		{

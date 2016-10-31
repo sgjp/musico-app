@@ -6,6 +6,7 @@ namespace Musico
 	{
 		//Base
 		public static string BASE_URL = "http://10.81.4.87:8080";
+		//public static string BASE_URL = "https://musico-js.herokuapp.com";
 
 		//Bands
 		public static string BANDS = BASE_URL + "/bands";
@@ -15,7 +16,9 @@ namespace Musico
 
 		//Band
 
-		public static string BAND = BASE_URL + "/band/";
+		public static string BAND = BASE_URL + "/band";
+
+		public static string BAND_BY_NAME = BAND + "/name";
 
 		public static string BAND_REVIEW = "/review";
 
@@ -27,6 +30,7 @@ namespace Musico
 
 		public static string AUTH = BASE_URL + "/auth/login";
 
+		public static string TOP_USERS = BASE_URL + "/user/top";
 	}
 }
 

@@ -1,8 +1,182 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#ffeeeeee">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="#ffeeeeee"
+        android:layout_marginTop="60dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+            <ImageView
+                android:src="@drawable/avatar"
+                android:layout_width="215.5dp"
+                android:layout_height="224.5dp"
+                android:id="@+id/imageView1"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:maxWidth="10dp"
+                android:maxHeight="10dp"
+                android:minWidth="10dp"
+                android:minHeight="10dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <TextView
+                    android:text="Led Zepellin"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="38dp"
+                    android:id="@+id/BandName"
+                    android:textColor="#ffff5722"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp" />
+                <TextView
+                    android:text="$500"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="35dp"
+                    android:id="@+id/AvgPrice"
+                    android:textColor="#ff00b0ff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:text="rock"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="35dp"
+                    android:id="@+id/Genre"
+                    android:textColor="#ff00b0ff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:text="Saskatoon"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="35dp"
+                    android:id="@+id/Location"
+                    android:textColor="#ff00b0ff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:capitalize="sentences" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:minHeight="140dp">
+            <RatingBar
+                android:id="@+id/Rating"
+                android:max="5"
+                android:numStars="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:longClickable="false"
+                android:clickable="false"
+                android:isIndicator="true" />
+            <ImageButton
+                android:src="@drawable/facebooklogo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/FbImageBtn"
+                android:background="#02ffffff"
+                android:scaleX="0.6"
+                android:scaleY="0.6" />
+            <ImageButton
+                android:src="@drawable/youtubelogo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/YoImageBtn"
+                android:background="#02ffffff"
+                android:scaleX="0.6"
+                android:scaleY="0.6" />
+        </LinearLayout>
+        <TextView
+            android:text="Requeriments:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp"
+            android:id="@+id/RequerimentsTitle"
+            android:textColor="#ff00b0ff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" />
+        <TextView
+            android:text="Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum                   Lorem Ipsum Lorem Ipsum Lorem Ipsum                    Lorem Ipsum Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp"
+            android:id="@+id/Requeriments"
+            android:textColor="#ff2e7d32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp" />
+        <TextView
+            android:text="Next Events:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp"
+            android:id="@+id/RequerimentsTitle"
+            android:textColor="#ff00b0ff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" />
+        <TextView
+            android:text="asd /n asd \n asd"
+            android:lines="5"
+            android:maxLines="5"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp"
+            android:id="@+id/Events"
+            android:textColor="#ff2e7d32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5"
+            android:layout_marginTop="40dp">
+            <Button
+                android:text="Comments and reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/comments"
+                android:textColor="#fffafafa"
+                android:background="#ff2196f3"
+                android:layout_weight="0.4"
+                android:minHeight="45dp" />
+            <Button
+                android:text="Book this artist"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/book"
+                android:textColor="#fffafafa"
+                android:background="#ff2196f3"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
-

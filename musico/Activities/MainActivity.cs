@@ -32,12 +32,7 @@ namespace musico
 			*/
 		}
 
-		public async void test(){
-			//IList<Band> bandList = await MusicoConnUtil.GetAllBandsAsync ();
 
-			//Console.WriteLine (bandList.ToString());
-
-		}
 	}
 }
 

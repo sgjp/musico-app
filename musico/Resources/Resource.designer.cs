@@ -799,13 +799,22 @@ namespace musico
 			public const int abc_textfield_searchview_right_holo_light = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int bp = 2130837591;
+			public const int avatar = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int Logo = 2130837592;
+			public const int bp = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int LogoSmall = 2130837593;
+			public const int facebookLogo = 2130837593;
+			
+			// aapt resource value: 0x7f02005a
+			public const int Logo = 2130837594;
+			
+			// aapt resource value: 0x7f02005b
+			public const int LogoSmall = 2130837595;
+			
+			// aapt resource value: 0x7f02005c
+			public const int youtubeLogo = 2130837596;
 			
 			static Drawable()
 			{
@@ -820,8 +829,41 @@ namespace musico
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f0a0040
+			public const int AvgPrice = 2131361856;
+			
+			// aapt resource value: 0x7f0a003f
+			public const int BandName = 2131361855;
+			
+			// aapt resource value: 0x7f0a0049
+			public const int Events = 2131361865;
+			
+			// aapt resource value: 0x7f0a0045
+			public const int FbImageBtn = 2131361861;
+			
+			// aapt resource value: 0x7f0a0041
+			public const int Genre = 2131361857;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int Location = 2131361858;
+			
+			// aapt resource value: 0x7f0a0044
+			public const int Rating = 2131361860;
+			
 			// aapt resource value: 0x7f0a0048
-			public const int TopListView = 2131361864;
+			public const int Requeriments = 2131361864;
+			
+			// aapt resource value: 0x7f0a0047
+			public const int RequerimentsTitle = 2131361863;
+			
+			// aapt resource value: 0x7f0a0051
+			public const int TopListView = 2131361873;
+			
+			// aapt resource value: 0x7f0a0053
+			public const int TopUsersListView = 2131361875;
+			
+			// aapt resource value: 0x7f0a0046
+			public const int YoImageBtn = 2131361862;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int action_bar = 2131361820;
@@ -865,23 +907,26 @@ namespace musico
 			// aapt resource value: 0x7f0a0016
 			public const int beginning = 2131361814;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int btn_cancel = 2131361874;
+			// aapt resource value: 0x7f0a004c
+			public const int book = 2131361868;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int btn_login = 2131361873;
+			// aapt resource value: 0x7f0a005a
+			public const int btn_cancel = 2131361882;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int btn_signup = 2131361875;
+			// aapt resource value: 0x7f0a0059
+			public const int btn_login = 2131361881;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int button4 = 2131361867;
+			// aapt resource value: 0x7f0a005b
+			public const int btn_signup = 2131361883;
 			
 			// aapt resource value: 0x7f0a002d
 			public const int checkbox = 2131361837;
 			
 			// aapt resource value: 0x7f0a0010
 			public const int collapseActionView = 2131361808;
+			
+			// aapt resource value: 0x7f0a004b
+			public const int comments = 2131361867;
 			
 			// aapt resource value: 0x7f0a0028
 			public const int default_activity_button = 2131361832;
@@ -913,9 +958,6 @@ namespace musico
 			// aapt resource value: 0x7f0a000a
 			public const int homeAsUp = 2131361802;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int homeButton = 2131361853;
-			
 			// aapt resource value: 0x7f0a002a
 			public const int icon = 2131361834;
 			
@@ -925,29 +967,26 @@ namespace musico
 			// aapt resource value: 0x7f0a0027
 			public const int image = 2131361831;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int imageView1 = 2131361857;
+			// aapt resource value: 0x7f0a003d
+			public const int imageView1 = 2131361853;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int input = 2131361869;
+			// aapt resource value: 0x7f0a0055
+			public const int input = 2131361877;
 			
 			// aapt resource value: 0x7f0a003c
-			public const int linearLayout1 = 2131361852;
-			
-			// aapt resource value: 0x7f0a0040
-			public const int linearLayout2 = 2131361856;
+			public const int linearLayout2 = 2131361852;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int linearLayout3 = 2131361859;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int linearLayout4 = 2131361865;
+			// aapt resource value: 0x7f0a003e
+			public const int linearLayout4 = 2131361854;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int linearLayout5 = 2131361860;
+			// aapt resource value: 0x7f0a004a
+			public const int linearLayout5 = 2131361866;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int linearLayout6 = 2131361863;
+			// aapt resource value: 0x7f0a0050
+			public const int linearLayout6 = 2131361872;
 			
 			// aapt resource value: 0x7f0a0006
 			public const int listMode = 2131361798;
@@ -955,23 +994,23 @@ namespace musico
 			// aapt resource value: 0x7f0a0029
 			public const int list_item = 2131361833;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int ll_logininfo = 2131361872;
+			// aapt resource value: 0x7f0a0058
+			public const int ll_logininfo = 2131361880;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int login_accounts = 2131361870;
+			// aapt resource value: 0x7f0a0056
+			public const int login_accounts = 2131361878;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int login_password = 2131361871;
+			// aapt resource value: 0x7f0a0057
+			public const int login_password = 2131361879;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int loginpage = 2131361868;
+			// aapt resource value: 0x7f0a0054
+			public const int loginpage = 2131361876;
 			
 			// aapt resource value: 0x7f0a0018
 			public const int middle = 2131361816;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int myButton = 2131361876;
+			// aapt resource value: 0x7f0a005c
+			public const int myButton = 2131361884;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int never = 2131361810;
@@ -991,11 +1030,8 @@ namespace musico
 			// aapt resource value: 0x7f0a002f
 			public const int radio = 2131361839;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int reccomendedListView = 2131361862;
-			
-			// aapt resource value: 0x7f0a003f
-			public const int searchButton = 2131361855;
+			// aapt resource value: 0x7f0a004f
+			public const int reccomendedListView = 2131361871;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int search_badge = 2131361842;
@@ -1048,20 +1084,17 @@ namespace musico
 			// aapt resource value: 0x7f0a0008
 			public const int tabMode = 2131361800;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int text1 = 2131361877;
+			// aapt resource value: 0x7f0a005d
+			public const int text1 = 2131361885;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int textView1 = 2131361858;
+			// aapt resource value: 0x7f0a004d
+			public const int textView1 = 2131361869;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int textView2 = 2131361861;
+			// aapt resource value: 0x7f0a004e
+			public const int textView2 = 2131361870;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int textView3 = 2131361866;
-			
-			// aapt resource value: 0x7f0a003e
-			public const int textView4 = 2131361854;
+			// aapt resource value: 0x7f0a0052
+			public const int textView3 = 2131361874;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int title = 2131361835;
