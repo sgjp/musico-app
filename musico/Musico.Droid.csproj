@@ -66,9 +66,9 @@
     <Compile Include="Utils\Utils.cs" />
     <Compile Include="Utils\DialogFactory.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
-    <Compile Include="Activities\Search.cs" />
     <Compile Include="CustomListAdapter.cs" />
     <Compile Include="Activities\DetailActivity.cs" />
+    <Compile Include="Activities\SearchActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

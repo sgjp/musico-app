@@ -835,6 +835,12 @@ namespace musico
 			// aapt resource value: 0x7f0a003f
 			public const int BandName = 2131361855;
 			
+			// aapt resource value: 0x7f0a006c
+			public const int DateLabel = 2131361900;
+			
+			// aapt resource value: 0x7f0a006d
+			public const int DateSearch = 2131361901;
+			
 			// aapt resource value: 0x7f0a0049
 			public const int Events = 2131361865;
 			
@@ -844,8 +850,35 @@ namespace musico
 			// aapt resource value: 0x7f0a0041
 			public const int Genre = 2131361857;
 			
+			// aapt resource value: 0x7f0a0063
+			public const int GenreLabel = 2131361891;
+			
 			// aapt resource value: 0x7f0a0042
 			public const int Location = 2131361858;
+			
+			// aapt resource value: 0x7f0a006b
+			public const int LocationLabel = 2131361899;
+			
+			// aapt resource value: 0x7f0a0067
+			public const int MaxPriceLabel = 2131361895;
+			
+			// aapt resource value: 0x7f0a0069
+			public const int MaxPriceValue = 2131361897;
+			
+			// aapt resource value: 0x7f0a0064
+			public const int MinPriceLabel = 2131361892;
+			
+			// aapt resource value: 0x7f0a0066
+			public const int MinPriceValue = 2131361894;
+			
+			// aapt resource value: 0x7f0a006a
+			public const int MinRatingLabel = 2131361898;
+			
+			// aapt resource value: 0x7f0a0062
+			public const int Name = 2131361890;
+			
+			// aapt resource value: 0x7f0a0061
+			public const int NameLabel = 2131361889;
 			
 			// aapt resource value: 0x7f0a0044
 			public const int Rating = 2131361860;
@@ -1009,8 +1042,14 @@ namespace musico
 			// aapt resource value: 0x7f0a0055
 			public const int loginpage = 2131361877;
 			
+			// aapt resource value: 0x7f0a0068
+			public const int maxPriceSeekBar = 2131361896;
+			
 			// aapt resource value: 0x7f0a0018
 			public const int middle = 2131361816;
+			
+			// aapt resource value: 0x7f0a0065
+			public const int minPriceSeekBar = 2131361893;
 			
 			// aapt resource value: 0x7f0a005d
 			public const int myButton = 2131361885;
@@ -1086,6 +1125,12 @@ namespace musico
 			
 			// aapt resource value: 0x7f0a0008
 			public const int tabMode = 2131361800;
+			
+			// aapt resource value: 0x7f0a005f
+			public const int tableLayout1 = 2131361887;
+			
+			// aapt resource value: 0x7f0a0060
+			public const int tableRow1 = 2131361888;
 			
 			// aapt resource value: 0x7f0a005e
 			public const int text1 = 2131361886;

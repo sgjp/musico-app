@@ -6,36 +6,6 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="#fff5f5f5">
-<!--    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:background="#ff00b0ff"
-        android:gravity="center">
-        <Button
-            android:text="Home"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/homeButton" />
-        <TextView
-            android:text="Are you looking for an artist?"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/textView4"
-            android:textColor="#fff5f5f5"
-            android:textSize="17dp"
-            android:layout_marginLeft="60dp"
-            android:layout_gravity="center"
-            android:gravity="center" />
-        <Button
-            android:text="Search"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/searchButton"
-            android:layout_marginLeft="5dp" />
-    </LinearLayout>-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"

@@ -18,7 +18,7 @@ namespace Musico
 	{
 
 
-		public static IList<Band> SearchBandsAsync (string location, string genre, int minPrice, int maxPrice, int minAvgRate, DateTime availableDate)
+		public static IList<Band> SearchBandsAsync (string location, string genre, int minPrice, int maxPrice, int minAvgRate, DateTime availableDate, string name)
 		{
 			IList<Band> bandList;
 			HttpResponseMessage response;
@@ -36,6 +36,9 @@ namespace Musico
 				values ["maxPrice"] = maxPrice.ToString();
 			if (minAvgRate > 0)
 				values ["minRate"] = minAvgRate.ToString();
+			if (name !=null)
+				values ["name"] = name;
+			
 
 			values ["availableDate"] = availableDate.ToString ("yyyy-MM-dd");
 				

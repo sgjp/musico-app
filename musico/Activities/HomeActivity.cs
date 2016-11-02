@@ -18,6 +18,8 @@ namespace musico
 		private ListView topBandsListView;
 		private ListView topUsersListView;
 
+		private Button searchButton;
+
 		private IList<Band> recommendedBandList;
 		private List<Band> topBandsList;
 		private List<TopUser> topUsersList;
@@ -40,11 +42,21 @@ namespace musico
 
 			SetContentView (Resource.Layout.Home);
 
+			searchButton = FindViewById<Button> (Resource.Id.btn_search);
+
+			searchButton.Click += SearchButton_Click;
+
 			initBandRecommendation ();
 			initTopBands ();
 			initTopUsers ();
 
 
+		}
+
+		void SearchButton_Click (object sender, EventArgs e)
+		{
+			Intent intent = new Intent (this, typeof(SearchActivity));
+			StartActivity (intent);
 		}
 
 		private void initTopUsers(){
@@ -111,7 +123,7 @@ namespace musico
 		private void initBandRecommendation(){
 			
 			recomendedListView = FindViewById<ListView> (Resource.Id.reccomendedListView);
-			recommendedBandList = MusicoConnUtil.SearchBandsAsync ("saskatoon", null, 0, 9999999, 0, new DateTime ());
+			recommendedBandList = MusicoConnUtil.SearchBandsAsync ("saskatoon", null, 0, 9999999, 0, new DateTime (),null);
 
 
 

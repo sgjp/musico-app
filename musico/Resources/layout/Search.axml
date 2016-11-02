@@ -1,8 +1,265 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#ffeeeeee">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="#ffeeeeee"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView1"
+                android:scaleX="0.6"
+                android:scaleY="0.6" />
+            <TextView
+                android:text="Find your artist:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:textColor="#ffff5722"
+                android:gravity="center" />
+        </LinearLayout>
+        <TableLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableLayout1"
+            android:stretchColumns="1"
+            android:layout_marginTop="10dp">
+            <TableRow
+                android:id="@+id/tableRow1">
+                <TextView
+                    android:text="Name:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:id="@+id/NameLabel"
+                    android:textColor="#ff00b0ff"
+                    android:paddingBottom="10dp"
+                    android:capitalize="sentences"
+                    android:layout_column="0" />
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:background="#00ffffff"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:text="sdf"
+                    android:layout_span="2" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="Genre:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:id="@+id/GenreLabel"
+                    android:textColor="#ff00b0ff"
+                    android:paddingBottom="10dp"
+                    android:capitalize="sentences"
+                    android:layout_column="0" />
+                <EditText
+                    android:id="@+id/Genre"
+                    android:layout_width="match_parent"
+                    android:background="#00ffffff"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:text="sdf"
+                    android:layout_span="2" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="Min Price:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:id="@+id/MinPriceLabel"
+                    android:textColor="#ff00b0ff"
+                    android:paddingBottom="10dp"
+                    android:capitalize="sentences"
+                    android:layout_column="0" />
+                <SeekBar
+                    android:layout_column="1"
+                    android:id="@+id/minPriceSeekBar"
+                    android:max="10000"
+                    android:layout_gravity="center_vertical"
+                    android:background="#02ffffff" />
+                <TextView
+                    android:text="10.000"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp"
+                    android:id="@+id/MinPriceValue"
+                    android:textColor="#ff00b0ff"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="Max Price:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:id="@+id/MaxPriceLabel"
+                    android:textColor="#ff00b0ff"
+                    android:paddingBottom="10dp"
+                    android:capitalize="sentences"
+                    android:layout_column="0" />
+                <SeekBar
+                    android:layout_column="1"
+                    android:id="@+id/maxPriceSeekBar"
+                    android:max="10000"
+                    android:layout_gravity="center_vertical"
+                    android:background="#02ffffff" />
+                <TextView
+                    android:text="10.000"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp"
+                    android:id="@+id/MaxPriceValue"
+                    android:textColor="#ff00b0ff"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="Min Rating:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:id="@+id/MinRatingLabel"
+                    android:textColor="#ff00b0ff"
+                    android:paddingBottom="10dp"
+                    android:capitalize="sentences"
+                    android:layout_column="0" />
+                <RatingBar
+                    android:id="@+id/Rating"
+                    android:max="5"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="Location:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:id="@+id/LocationLabel"
+                    android:textColor="#ff00b0ff"
+                    android:paddingBottom="10dp"
+                    android:capitalize="sentences"
+                    android:layout_column="0" />
+                <EditText
+                    android:id="@+id/Location"
+                    android:layout_width="match_parent"
+                    android:background="#00ffffff"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:text="sdf"
+                    android:layout_span="2" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="Date:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:id="@+id/DateLabel"
+                    android:textColor="#ff00b0ff"
+                    android:paddingBottom="10dp"
+                    android:capitalize="sentences"
+                    android:layout_column="0" />
+                <EditText
+                    android:inputType="time"
+                    android:layout_column="1"
+                    android:id="@+id/DateSearch"
+                    android:layout_span="2"
+                    android:hint="YYYY-MM-DD"
+                    android:maxLength="10" />
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:paddingTop="5.0dip"
+            android:text="Search"
+            android:textColor="#ffffffff"
+            android:textSize="30dp"
+            android:background="#ff2196f3"
+            android:maxHeight="60dp"
+            android:minHeight="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+    </LinearLayout>
 </LinearLayout>
-
