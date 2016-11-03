@@ -86,7 +86,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout3"
-            android:minHeight="140dp">
+            android:minHeight="140dp"
+            android:gravity="center">
             <RatingBar
                 android:id="@+id/Rating"
                 android:max="5"
@@ -163,7 +164,8 @@
                 android:text="Comments and reviews"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/comments"
+                android:id="@+id/Comments"
+                android:textSize="20dp"
                 android:textColor="#fffafafa"
                 android:background="#ff2196f3"
                 android:layout_weight="0.4"
@@ -172,7 +174,8 @@
                 android:text="Book this artist"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/book"
+                android:id="@+id/Book"
+                android:textSize="20dp"
                 android:textColor="#fffafafa"
                 android:background="#ff2196f3"
                 android:layout_weight="0.4"

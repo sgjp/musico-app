@@ -39,6 +39,12 @@
                 android:textColor="#ff00b0ff"
                 android:gravity="center" />
         </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -94,6 +100,12 @@
                     android:layout_width="match_parent" />
             </LinearLayout>
         </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -123,7 +135,7 @@
                 android:layout_marginTop="12.0dip"
                 android:gravity="center"
                 android:paddingTop="5.0dip"
-                android:text="Search Band!"
+                android:text="Search Artist !"
                 android:textColor="#ffffffff"
                 android:textSize="18.0sp"
                 android:layout_weight="1"

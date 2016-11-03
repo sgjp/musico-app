@@ -18,9 +18,9 @@ namespace Musico
 	{
 
 
-		public static IList<Band> SearchBandsAsync (string location, string genre, int minPrice, int maxPrice, int minAvgRate, DateTime availableDate, string name)
+		public static List<Band> SearchBandsAsync (string location, string genre, int minPrice, int maxPrice, int minAvgRate, DateTime availableDate, string name)
 		{
-			IList<Band> bandList;
+			List<Band> bandList;
 			HttpResponseMessage response;
 
 			NameValueCollection values = System.Web.HttpUtility.ParseQueryString(string.Empty);
@@ -51,7 +51,7 @@ namespace Musico
 
 
 			if (response.IsSuccessStatusCode){
-				bandList = JsonConvert.DeserializeObject <IList<Band>> (response.Content.ReadAsStringAsync ().Result);
+				bandList = JsonConvert.DeserializeObject <List<Band>> (response.Content.ReadAsStringAsync ().Result);
 				return bandList;
 			}
 

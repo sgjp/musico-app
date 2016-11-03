@@ -52,10 +52,23 @@ namespace musico
 
 			SetContentView (Resource.Layout.Detail);
 
+			commentsBTN = FindViewById<Button> (Resource.Id.Comments);
+
+			commentsBTN.Click += CommentsBTN_Click;
+
 
 			initBandInfo ();
 			initEvents ();
 			initRating ();
+
+		}
+
+		void CommentsBTN_Click (object sender, EventArgs e)
+		{
+			Intent intent = new Intent (this, typeof (CommentsAndReviewsActivity));
+			intent.PutExtra ("name", band.Name);
+
+			StartActivity (intent);
 
 		}
 

@@ -69,6 +69,10 @@
     <Compile Include="CustomListAdapter.cs" />
     <Compile Include="Activities\DetailActivity.cs" />
     <Compile Include="Activities\SearchActivity.cs" />
+    <Compile Include="Activities\BandListActivity.cs" />
+    <Compile Include="CustomBandListAdapter.cs" />
+    <Compile Include="Activities\CommentsAndReviewsActivity.cs" />
+    <Compile Include="CustomReviewListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -101,10 +105,14 @@
     <AndroidResource Include="Resources\layout\Search.axml" />
     <AndroidResource Include="Resources\layout\Detail.axml" />
     <AndroidResource Include="Resources\drawable\bp.png" />
-    <AndroidResource Include="Resources\layout\Row.axml" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
     <AndroidResource Include="Resources\drawable\youtubeLogo.png" />
     <AndroidResource Include="Resources\drawable\facebookLogo.png" />
+    <AndroidResource Include="Resources\layout\BandList.axml" />
+    <AndroidResource Include="Resources\layout\CommentsAndReviews.axml" />
+    <AndroidResource Include="Resources\layout\Row.axml" />
+    <AndroidResource Include="Resources\layout\RowBandList.axml" />
+    <AndroidResource Include="Resources\layout\ReviewRow.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

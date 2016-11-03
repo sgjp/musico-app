@@ -20,7 +20,7 @@ namespace musico
 
 		private Button searchButton;
 
-		private IList<Band> recommendedBandList;
+		private List<Band> recommendedBandList;
 		private List<Band> topBandsList;
 		private List<TopUser> topUsersList;
 

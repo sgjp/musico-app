@@ -65,7 +65,6 @@
                     android:maxLines="1"
                     android:textColor="#000000"
                     android:textSize="20dp"
-                    android:text="sdf"
                     android:layout_span="2" />
             </TableRow>
             <View
@@ -93,7 +92,6 @@
                     android:maxLines="1"
                     android:textColor="#000000"
                     android:textSize="20dp"
-                    android:text="sdf"
                     android:layout_span="2" />
             </TableRow>
             <View
@@ -121,7 +119,6 @@
                     android:layout_gravity="center_vertical"
                     android:background="#02ffffff" />
                 <TextView
-                    android:text="10.000"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textSize="20dp"
                     android:id="@+id/MinPriceValue"
@@ -155,7 +152,6 @@
                     android:layout_gravity="center_vertical"
                     android:background="#02ffffff" />
                 <TextView
-                    android:text="10.000"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textSize="20dp"
                     android:id="@+id/MaxPriceValue"
@@ -216,7 +212,6 @@
                     android:maxLines="1"
                     android:textColor="#000000"
                     android:textSize="20dp"
-                    android:text="sdf"
                     android:layout_span="2" />
             </TableRow>
             <View
@@ -238,7 +233,7 @@
                     android:capitalize="sentences"
                     android:layout_column="0" />
                 <EditText
-                    android:inputType="time"
+                    android:inputType="date"
                     android:layout_column="1"
                     android:id="@+id/DateSearch"
                     android:layout_span="2"
