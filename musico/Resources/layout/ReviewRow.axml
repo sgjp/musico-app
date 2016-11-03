@@ -17,12 +17,13 @@
             android:text="Comment"
             android:typeface="sans"
             android:textSize="12dp"
-            android:textColor="#ffff5722"
+            android:textColor="#ff00b0ff"
             android:layout_marginLeft="2dp"
             android:maxWidth="220dp"
             android:width="220dp"
             android:maxLines="4"
-            android:lines="4" />
+            android:lines="4"
+            android:gravity="center_vertical" />
         <View
             android:layout_width="1.0px"
             android:layout_height="fill_parent"
@@ -38,7 +39,10 @@
             android:typeface="sans"
             android:textSize="12dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:width="40dp"
+            android:minWidth="40dp"
+            android:gravity="center" />
         <View
             android:layout_width="1.0px"
             android:layout_height="fill_parent"
@@ -54,7 +58,9 @@
             android:typeface="sans"
             android:textSize="12dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:width="62dp"
+            android:gravity="center" />
         <View
             android:layout_width="1.0px"
             android:layout_height="fill_parent"
@@ -70,7 +76,10 @@
             android:typeface="sans"
             android:textSize="12dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:width="53dp"
+            android:maxWidth="53dp"
+            android:gravity="center" />
         <View
             android:layout_width="1.0px"
             android:layout_height="fill_parent"
@@ -86,7 +95,10 @@
             android:typeface="sans"
             android:textSize="12dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:width="65dp"
+            android:maxWidth="65dp"
+            android:gravity="center" />
         <View
             android:layout_width="1.0px"
             android:layout_height="fill_parent"
@@ -102,7 +114,10 @@
             android:typeface="sans"
             android:textSize="12dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:width="51dp"
+            android:maxWidth="51dp"
+            android:gravity="center" />
         <View
             android:layout_width="1.0px"
             android:layout_height="fill_parent"
@@ -116,8 +131,11 @@
             android:text="Overall"
             android:textColor="#ffff5722"
             android:typeface="sans"
-            android:textSize="12dp"
+            android:textSize="13dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:width="40dp"
+            android:maxWidth="40dp"
+            android:gravity="center" />
     </LinearLayout>
 </LinearLayout>
