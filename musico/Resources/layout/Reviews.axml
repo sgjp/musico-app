@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#ffeceff1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="#ffeceff1"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+            <ImageView
+                android:src="@drawable/avatar"
+                android:layout_width="186.5dp"
+                android:layout_height="152.5dp"
+                android:id="@+id/imageView1"
+                android:maxWidth="10dp"
+                android:maxHeight="10dp"
+                android:minWidth="10dp"
+                android:minHeight="10dp"
+                android:layout_gravity="center" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <TextView
+                    android:text="Led Zepellin"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="23dp"
+                    android:id="@+id/BandName"
+                    android:textColor="#ffff5722"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:text="$500"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="23dp"
+                    android:id="@+id/AvgPrice"
+                    android:textColor="#ff00b0ff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:text="rock"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="23dp"
+                    android:id="@+id/Genre"
+                    android:textColor="#ff00b0ff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:text="Reviews"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="23dp"
+            android:id="@+id/Location"
+            android:textColor="#ffff5722"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:capitalize="sentences"
+            android:layout_marginTop="10dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="502.5dp"
+            android:id="@+id/reviews" />
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:paddingTop="5.0dip"
+            android:text="Add"
+            android:textColor="#ffffffff"
+            android:textSize="30dp"
+            android:background="#ff2196f3"
+            android:maxHeight="60dp"
+            android:minHeight="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+    </LinearLayout>
+</LinearLayout>

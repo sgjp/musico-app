@@ -14,20 +14,21 @@ namespace musico
 		string[] ratingsFlexibility ;
 		string[] ratingsEnthusiasm ;
 		string[] ratingsSimilarity ;
-		string[] ratingsOverall ;
+		float[] ratingsOverall ;
 
 		Activity context;
 
-		public CustomReviewListAdapter(Activity context, string[] comments, string[] ratingsQuality, string[] ratingsPunctuality, string[] ratingsFlexibility, string[] ratingsEnthusiasm ,string[] ratingsSimilarity, string[] ratingsOverall ) : base() {
+		public CustomReviewListAdapter(Activity context, string[] comments, float[] ratingsOverall ) : base() {
 			this.context = context;
 
 			this.comments = comments;
-			this.ratingsQuality = ratingsQuality;
 
-			this.ratingsPunctuality = ratingsPunctuality;
-			this.ratingsFlexibility = ratingsFlexibility;
-			this.ratingsEnthusiasm = ratingsEnthusiasm;
-			this.ratingsSimilarity = ratingsSimilarity;
+//			this.ratingsQuality = ratingsQuality;
+//			this.ratingsPunctuality = ratingsPunctuality;
+//			this.ratingsFlexibility = ratingsFlexibility;
+//			this.ratingsEnthusiasm = ratingsEnthusiasm;
+//			this.ratingsSimilarity = ratingsSimilarity;
+
 			this.ratingsOverall = ratingsOverall;
 		}
 
@@ -50,12 +51,13 @@ namespace musico
 			if (view == null) // otherwise create a new one
 				view = context.LayoutInflater.Inflate(Resource.Layout.ReviewRow, null);
 			view.FindViewById<TextView>(Resource.Id.Comment).Text = comments[position];
-			view.FindViewById<TextView>(Resource.Id.Quality).Text = ratingsQuality[position];
-			view.FindViewById<TextView>(Resource.Id.Punctuality).Text = ratingsPunctuality[position];
-			view.FindViewById<TextView>(Resource.Id.Flexibility).Text = ratingsFlexibility[position];
-			view.FindViewById<TextView>(Resource.Id.Enthusiasm).Text = ratingsEnthusiasm[position];
-			view.FindViewById<TextView>(Resource.Id.Similarity).Text = ratingsSimilarity[position];
-			view.FindViewById<TextView>(Resource.Id.Overall).Text = ratingsOverall[position];
+			view.FindViewById<RatingBar>(Resource.Id.Rating).Rating = ratingsOverall[position];
+			//view.FindViewById<TextView>(Resource.Id.Quality).Text = ratingsQuality[position];
+			//view.FindViewById<TextView>(Resource.Id.Punctuality).Text = ratingsPunctuality[position];
+			//view.FindViewById<TextView>(Resource.Id.Flexibility).Text = ratingsFlexibility[position];
+			//view.FindViewById<TextView>(Resource.Id.Enthusiasm).Text = ratingsEnthusiasm[position];
+			//view.FindViewById<TextView>(Resource.Id.Similarity).Text = ratingsSimilarity[position];
+			//view.FindViewById<TextView>(Resource.Id.Overall).Text = ratingsOverall[position];
 
 
 			return view;

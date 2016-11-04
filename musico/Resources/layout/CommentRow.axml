@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffeeeeee">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffeeeeee"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffeeeeee"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/Type"
+                android:text="+1"
+                android:typeface="sans"
+                android:textSize="40dp"
+                android:textColor="#ffff5722"
+                android:gravity="center_vertical" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Comment"
+                android:text="aasdasdasda asdasdasd asdasd hola si, como te va, este es un texto de prueba para ver si todo acaba completo, por eso esta asi de largo, final."
+                android:typeface="sans"
+                android:textSize="18dp"
+                android:textColor="#ff00b0ff"
+                android:gravity="center_vertical"
+                android:maxLines="4"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+    </LinearLayout>
+</LinearLayout>

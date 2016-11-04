@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:background="#ffeeeeee">
+    android:background="#ffeceff1">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -15,8 +15,8 @@
         android:paddingBottom="30dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:background="#ffeeeeee"
-        android:layout_marginTop="60dp">
+        android:background="#ffeceff1"
+        android:layout_marginTop="30dp">
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -86,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout3"
-            android:minHeight="140dp"
+            android:minHeight="130dp"
             android:gravity="center">
             <RatingBar
                 android:id="@+id/Rating"
@@ -98,7 +98,9 @@
                 android:focusable="false"
                 android:longClickable="false"
                 android:clickable="false"
-                android:isIndicator="true" />
+                android:isIndicator="true"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
             <ImageButton
                 android:src="@drawable/facebooklogo"
                 android:layout_width="wrap_content"
@@ -119,16 +121,17 @@
         <TextView
             android:text="Requeriments:"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="25dp"
+            android:textSize="22dp"
             android:id="@+id/RequerimentsTitle"
             android:textColor="#ff00b0ff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:layout_marginTop="-20dp" />
         <TextView
-            android:text="Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum                   Lorem Ipsum Lorem Ipsum Lorem Ipsum                    Lorem Ipsum Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+            android:text="m Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="12dp"
+            android:textSize="22dp"
             android:id="@+id/Requeriments"
             android:textColor="#ff2e7d32"
             android:layout_width="match_parent"
@@ -137,18 +140,19 @@
         <TextView
             android:text="Next Events:"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="25dp"
+            android:textSize="22dp"
             android:id="@+id/RequerimentsTitle"
             android:textColor="#ff00b0ff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:layout_marginTop="-10dp" />
         <TextView
             android:text="asd /n asd \n asd"
             android:lines="5"
             android:maxLines="5"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="12dp"
+            android:textSize="18dp"
             android:id="@+id/Events"
             android:textColor="#ff2e7d32"
             android:layout_width="match_parent"
@@ -161,20 +165,20 @@
             android:id="@+id/linearLayout5"
             android:layout_marginTop="40dp">
             <Button
-                android:text="Comments and reviews"
+                android:text="Reviews"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/Comments"
+                android:id="@+id/Reviews"
                 android:textSize="20dp"
                 android:textColor="#fffafafa"
                 android:background="#ff2196f3"
                 android:layout_weight="0.4"
                 android:minHeight="45dp" />
             <Button
-                android:text="Book this artist"
+                android:text="Comments"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/Book"
+                android:id="@+id/Comments"
                 android:textSize="20dp"
                 android:textColor="#fffafafa"
                 android:background="#ff2196f3"

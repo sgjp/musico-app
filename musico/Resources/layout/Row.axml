@@ -3,24 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="#ffeeeeee">
+    android:background="#ffeceff1"
+    android:weightSum="1"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
     <ImageView
-        android:src="@drawable/bp"
+        android:src="@drawable/bp2"
         android:layout_width="50dp"
         android:layout_height="match_parent"
         android:id="@+id/imageView1"
-        android:layout_weight="0.1"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp" />
+        android:minWidth="50dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/text1"
-        android:text="asd"
+        android:text="asdasdasdasssssssssssssssssssdasdasd"
         android:textColor="#ff000000"
         android:typeface="sans"
         android:layout_weight="0.9"
-        android:textSize="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp" />
+        android:textSize="20dp" />
 </LinearLayout>

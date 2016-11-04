@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:background="#ffeeeeee">
+    android:background="#ffeceff1">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:paddingBottom="30dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:background="#ffeeeeee"
+        android:background="#ffeceff1"
         android:layout_marginTop="10dp">
         <LinearLayout
             android:orientation="horizontal"

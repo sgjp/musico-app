@@ -36,6 +36,8 @@ namespace musico
 
 		private Button commentsBTN;
 
+		private Button reviewsBTN;
+
 		private Button bookBTN;
 
 		private RatingBar ratingRB;
@@ -52,10 +54,13 @@ namespace musico
 
 			SetContentView (Resource.Layout.Detail);
 
+			reviewsBTN = FindViewById<Button> (Resource.Id.Reviews);
+
 			commentsBTN = FindViewById<Button> (Resource.Id.Comments);
 
-			commentsBTN.Click += CommentsBTN_Click;
+			reviewsBTN.Click += ReviewsBTN_Click;
 
+			commentsBTN.Click += CommentsBTN_Click;
 
 			initBandInfo ();
 			initEvents ();
@@ -63,13 +68,21 @@ namespace musico
 
 		}
 
-		void CommentsBTN_Click (object sender, EventArgs e)
+		void ReviewsBTN_Click (object sender, EventArgs e)
 		{
-			Intent intent = new Intent (this, typeof (CommentsAndReviewsActivity));
+			Intent intent = new Intent (this, typeof (ReviewsActivity));
 			intent.PutExtra ("name", band.Name);
 
 			StartActivity (intent);
 
+		}
+
+		void CommentsBTN_Click (object sender, EventArgs e)
+		{
+			Intent intent = new Intent (this, typeof (CommentsActivity));
+			intent.PutExtra ("name", band.Name);
+
+			StartActivity (intent);
 		}
 
 		private void initBandInfo(){

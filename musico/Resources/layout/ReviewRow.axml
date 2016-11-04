@@ -7,135 +7,36 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:background="#ffeeeeee"
         android:weightSum="1">
-        <TextView
+        <RatingBar
+            android:id="@+id/Rating"
+            android:max="5"
+            android:numStars="5"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:focusable="false"
+            android:longClickable="false"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Comment"
             android:text="Comment"
             android:typeface="sans"
-            android:textSize="12dp"
+            android:textSize="18dp"
             android:textColor="#ff00b0ff"
-            android:layout_marginLeft="2dp"
-            android:maxWidth="220dp"
-            android:width="220dp"
-            android:maxLines="4"
-            android:lines="4"
             android:gravity="center_vertical" />
         <View
-            android:layout_width="1.0px"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
             android:background="#ffc0c3c4" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Quality"
-            android:text="Quality"
-            android:textColor="#ff00b0ff"
-            android:typeface="sans"
-            android:textSize="12dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:width="40dp"
-            android:minWidth="40dp"
-            android:gravity="center" />
-        <View
-            android:layout_width="1.0px"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="#ffc0c3c4" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Punctuality"
-            android:text="Punctuality"
-            android:textColor="#ff00b0ff"
-            android:typeface="sans"
-            android:textSize="12dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:width="62dp"
-            android:gravity="center" />
-        <View
-            android:layout_width="1.0px"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="#ffc0c3c4" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Flexibility"
-            android:text="Flexibility"
-            android:textColor="#ff00b0ff"
-            android:typeface="sans"
-            android:textSize="12dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:width="53dp"
-            android:maxWidth="53dp"
-            android:gravity="center" />
-        <View
-            android:layout_width="1.0px"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="#ffc0c3c4" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Enthusiasm"
-            android:text="Enthusiasm"
-            android:textColor="#ff00b0ff"
-            android:typeface="sans"
-            android:textSize="12dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:width="65dp"
-            android:maxWidth="65dp"
-            android:gravity="center" />
-        <View
-            android:layout_width="1.0px"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="#ffc0c3c4" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Similarity"
-            android:text="Similarity"
-            android:textColor="#ff00b0ff"
-            android:typeface="sans"
-            android:textSize="12dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:width="51dp"
-            android:maxWidth="51dp"
-            android:gravity="center" />
-        <View
-            android:layout_width="1.0px"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="#ffc0c3c4" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Overall"
-            android:text="Overall"
-            android:textColor="#ffff5722"
-            android:typeface="sans"
-            android:textSize="13dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:width="40dp"
-            android:maxWidth="40dp"
-            android:gravity="center" />
     </LinearLayout>
 </LinearLayout>
