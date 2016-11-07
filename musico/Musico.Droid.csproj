@@ -75,6 +75,9 @@
     <Compile Include="Activities\ReviewsActivity.cs" />
     <Compile Include="Activities\CommentsActivity.cs" />
     <Compile Include="CustomCommentListAdapter.cs" />
+    <Compile Include="Activities\DialogReviewDetail.cs" />
+    <Compile Include="Activities\AddReviewActivity.cs" />
+    <Compile Include="Activities\AddCommentActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -118,11 +121,19 @@
     <AndroidResource Include="Resources\layout\Comments.axml" />
     <AndroidResource Include="Resources\layout\CommentRow.axml" />
     <AndroidResource Include="Resources\drawable\bp2.png" />
+    <AndroidResource Include="Resources\layout\ReviewDetail.axml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\anim\slideRight.xml" />
+    <AndroidResource Include="Resources\anim\slideUp.xml" />
+    <AndroidResource Include="Resources\layout\AddReview.axml" />
+    <AndroidResource Include="Resources\layout\AddComment.axml" />
+    <AndroidResource Include="Resources\layout\SpinnerItem.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Activities\" />
     <Folder Include="Utils\" />
+    <Folder Include="Resources\anim\" />
   </ItemGroup>
   <Import Project="Musico.projitems" Label="Shared" Condition="Exists('Musico.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

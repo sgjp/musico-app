@@ -9,11 +9,6 @@ namespace musico
 	public class CustomReviewListAdapter: BaseAdapter<string> {
 		
 		string[] comments ;
-		string[] ratingsQuality ;
-		string[] ratingsPunctuality ;
-		string[] ratingsFlexibility ;
-		string[] ratingsEnthusiasm ;
-		string[] ratingsSimilarity ;
 		float[] ratingsOverall ;
 
 		Activity context;
@@ -52,12 +47,6 @@ namespace musico
 				view = context.LayoutInflater.Inflate(Resource.Layout.ReviewRow, null);
 			view.FindViewById<TextView>(Resource.Id.Comment).Text = comments[position];
 			view.FindViewById<RatingBar>(Resource.Id.Rating).Rating = ratingsOverall[position];
-			//view.FindViewById<TextView>(Resource.Id.Quality).Text = ratingsQuality[position];
-			//view.FindViewById<TextView>(Resource.Id.Punctuality).Text = ratingsPunctuality[position];
-			//view.FindViewById<TextView>(Resource.Id.Flexibility).Text = ratingsFlexibility[position];
-			//view.FindViewById<TextView>(Resource.Id.Enthusiasm).Text = ratingsEnthusiasm[position];
-			//view.FindViewById<TextView>(Resource.Id.Similarity).Text = ratingsSimilarity[position];
-			//view.FindViewById<TextView>(Resource.Id.Overall).Text = ratingsOverall[position];
 
 
 			return view;

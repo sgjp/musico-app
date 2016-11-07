@@ -94,7 +94,7 @@ namespace musico
 								Toast.MakeText (this, "Login successfull!", ToastLength.Short).Show ();
 								Intent intent = new Intent (this, typeof(HomeActivity));
 								intent.PutExtra ("email", email);
-								intent.PutExtra ("id", result);
+								intent.PutExtra ("id", result+"");
 								StartActivity (intent);
 								Finish ();
 							} else {

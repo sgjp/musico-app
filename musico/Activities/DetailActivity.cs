@@ -46,8 +46,12 @@ namespace musico
 
 		private ImageButton youtubeIBTN;
 
+		private string userId;
+
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
+			userId = this.Intent.GetStringExtra ("id");
+
 			base.OnCreate (savedInstanceState);
 
 			RequestWindowFeature (WindowFeatures.NoTitle);
@@ -72,6 +76,7 @@ namespace musico
 		{
 			Intent intent = new Intent (this, typeof (ReviewsActivity));
 			intent.PutExtra ("name", band.Name);
+			intent.PutExtra ("id", userId);
 
 			StartActivity (intent);
 
@@ -81,6 +86,7 @@ namespace musico
 		{
 			Intent intent = new Intent (this, typeof (CommentsActivity));
 			intent.PutExtra ("name", band.Name);
+			intent.PutExtra ("id", userId);
 
 			StartActivity (intent);
 		}

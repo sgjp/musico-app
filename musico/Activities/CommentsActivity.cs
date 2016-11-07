@@ -27,7 +27,9 @@ namespace musico
 
 		private TextView commentsTotalTV;
 
-		private int id;
+		private Button addCommentBtn;
+
+		private string userId;
 
 		private int commentsTotal;
 
@@ -37,6 +39,8 @@ namespace musico
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
+			userId = this.Intent.GetStringExtra ("id");
+
 			RequestWindowFeature (WindowFeatures.NoTitle);
 
 			SetContentView (Resource.Layout.Comments);
@@ -61,10 +65,24 @@ namespace musico
 
 			genreTV = FindViewById<TextView> (Resource.Id.Genre);
 
+			addCommentBtn = FindViewById<Button> (Resource.Id.AddComment);
+
+			addCommentBtn.Click += AddCommentBtn_Click;
+
 			bandNameTV.Text = band.Name;
 			avgPriceTV.Text = "$" + band.AvgPrice;
 			genreTV.Text = band.Genre;
 
+		}
+
+		void AddCommentBtn_Click (object sender, EventArgs e)
+		{
+			Intent intent = new Intent (this, typeof (AddCommentActivity));
+			intent.PutExtra ("name", band.Name);
+			intent.PutExtra ("id", band.Id);
+			intent.PutExtra ("userId", userId);
+
+			StartActivity (intent);
 		}
 
 		private void initComments(){

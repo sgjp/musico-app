@@ -24,7 +24,7 @@
                 android:typeface="sans"
                 android:textSize="40dp"
                 android:textColor="#ffff5722"
-                android:gravity="center_vertical" />
+                android:gravity="center" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

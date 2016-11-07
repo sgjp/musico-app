@@ -24,6 +24,8 @@ namespace musico
 		private List<Band> topBandsList;
 		private List<TopUser> topUsersList;
 
+		private string userId;
+
 		List<String> listItems=new List<String>();
 
 		ArrayAdapter<String> adapter;
@@ -32,9 +34,8 @@ namespace musico
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
+			userId = this.Intent.GetStringExtra ("id");
 			RequestWindowFeature (WindowFeatures.NoTitle);	
-			//homeButton = FindViewById<Button> (Resource.Id.homeButton);
-			//searchButton = FindViewById<Button> (Resource.Id.searchButton);
 
 
 
@@ -56,6 +57,7 @@ namespace musico
 		void SearchButton_Click (object sender, EventArgs e)
 		{
 			Intent intent = new Intent (this, typeof(SearchActivity));
+			intent.PutExtra ("id", userId);
 			StartActivity (intent);
 		}
 
@@ -116,6 +118,7 @@ namespace musico
 		{
 			Intent intent = new Intent (this, typeof(DetailActivity));
 			intent.PutExtra ("name", topBandsListView.GetItemAtPosition (e.Position).ToString());
+			intent.PutExtra ("id", userId);
 			StartActivity (intent);
 
 		}
@@ -151,6 +154,7 @@ namespace musico
 		{
 			Intent intent = new Intent (this, typeof(DetailActivity));
 			intent.PutExtra ("name", recomendedListView.GetItemAtPosition (e.Position).ToString());
+			intent.PutExtra ("id", userId);
 			StartActivity (intent);
 		}
 

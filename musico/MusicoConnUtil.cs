@@ -125,6 +125,63 @@ namespace Musico
 			return null;
 		}
 
+		public static async Task<int> AddReview(string comment, float overall, float quality, float punctuality, float flexibility, float enthusiasm, float similarity, string userId, string bandId )
+		{
+			int result;
+			var values = new Dictionary<string, string> {
+				{ "comment", comment },
+				{ "rate", Convert.ToInt32 (overall)+"" },
+				{"rateQuality", Convert.ToInt32(quality)+""},
+				{"ratePunctuality", Convert.ToInt32(punctuality)+""},
+				{"rateFlexibility", Convert.ToInt32(flexibility)+""},
+				{"rateEnthusiasm", Convert.ToInt32(enthusiasm)+""},
+				{"rateSimilarity", Convert.ToInt32(similarity)+""},
+				{"userId", userId}
+			};
+
+			var content = new FormUrlEncodedContent (values);
+
+			HttpResponseMessage response = null;
+			response = await MakeServerPostRequest(Globals.BAND+"/"+bandId+Globals.BAND_REVIEW,content);
+
+			if ( response.StatusCode==HttpStatusCode.InternalServerError){
+				return -1;
+			}else{
+				JObject resultJson = JObject.Parse (response.Content.ReadAsStringAsync ().Result);
+
+				result = Int32.Parse(resultJson.GetValue ("id").ToString());
+
+				return result;
+			}
+
+		}
+
+		public static async Task<int> AddComment(string comment, string type, string bandId, string userId){
+			int result;
+
+			var values = new Dictionary<string,string> {
+				{ "comment", comment },
+				{ "type", type },
+				{ "userId", userId }
+			};
+
+			var content = new FormUrlEncodedContent (values);
+
+			HttpResponseMessage response = null;
+			response = await MakeServerPostRequest(Globals.BAND+"/"+bandId+Globals.BAND_COMMENT,content);
+
+
+			if ( response.StatusCode==HttpStatusCode.InternalServerError){
+				return -1;
+			}else{
+				JObject resultJson = JObject.Parse (response.Content.ReadAsStringAsync ().Result);
+
+				result = Int32.Parse(resultJson.GetValue ("id").ToString());
+
+				return result;
+			}
+
+		}
 
 		private static HttpResponseMessage MakeServerGetRequest (string url)
 		{

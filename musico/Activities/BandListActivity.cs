@@ -22,8 +22,11 @@ namespace musico
 		float[] prices ;
 		float[] ratings ;
 
+		private string userId;
+
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
+			userId = this.Intent.GetStringExtra ("id");
 			RequestWindowFeature (WindowFeatures.NoTitle);
 			base.OnCreate (savedInstanceState);
 
@@ -51,6 +54,7 @@ namespace musico
 		{
 			Intent intent = new Intent (this, typeof(DetailActivity));
 			intent.PutExtra ("name", bandListTV.GetItemAtPosition(e.Position).ToString());
+			intent.PutExtra ("id", userId);
 			StartActivity (intent);
 		}
 	}

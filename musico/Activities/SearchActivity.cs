@@ -40,8 +40,11 @@ namespace musico
 		private float minRating;
 		private string date;
 
+		private string userId;
+
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
+			userId = this.Intent.GetStringExtra ("id");
 			RequestWindowFeature (WindowFeatures.NoTitle);	
 
 
@@ -124,6 +127,7 @@ namespace musico
 			intent.PutExtra ("names", names);
 			intent.PutExtra ("prices", prices);
 			intent.PutExtra ("ratings", ratings);
+			intent.PutExtra ("id", userId);
 			StartActivity (intent);
 
 
