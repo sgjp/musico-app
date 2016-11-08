@@ -183,6 +183,33 @@ namespace Musico
 
 		}
 
+		public static async Task<int> AddBooking (string description, DateTime date, string userId, string bandId){
+			int result;
+
+			var values = new Dictionary<string,string> {
+				{ "description", description },
+				{ "date", date.ToString ("yyyy-MM-dd")}
+			};
+
+			var content = new FormUrlEncodedContent (values);
+
+			HttpResponseMessage response = null;
+
+			response = await MakeServerPostRequest(Globals.BAND+"/"+bandId+Globals.BAND_BOOKING,content);
+
+
+			if ( response.StatusCode==HttpStatusCode.InternalServerError){
+				return -1;
+			}else{
+				JObject resultJson = JObject.Parse (response.Content.ReadAsStringAsync ().Result);
+
+				result = Int32.Parse(resultJson.GetValue ("id").ToString());
+
+				return result;
+			}
+
+		}
+
 		private static HttpResponseMessage MakeServerGetRequest (string url)
 		{
 			HttpClient client = new HttpClient ();

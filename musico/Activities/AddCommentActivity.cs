@@ -77,6 +77,7 @@ namespace musico
 
 			Toast.MakeText (this, "Comment added!", ToastLength.Short).Show ();
 			StartActivity (intent);
+			Finish ();
 		}
 
 

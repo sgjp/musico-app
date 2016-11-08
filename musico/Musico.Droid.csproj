@@ -78,6 +78,7 @@
     <Compile Include="Activities\DialogReviewDetail.cs" />
     <Compile Include="Activities\AddReviewActivity.cs" />
     <Compile Include="Activities\AddCommentActivity.cs" />
+    <Compile Include="Activities\BookActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -128,6 +129,7 @@
     <AndroidResource Include="Resources\layout\AddReview.axml" />
     <AndroidResource Include="Resources\layout\AddComment.axml" />
     <AndroidResource Include="Resources\layout\SpinnerItem.axml" />
+    <AndroidResource Include="Resources\layout\Book.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

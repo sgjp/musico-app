@@ -62,14 +62,27 @@ namespace musico
 
 			commentsBTN = FindViewById<Button> (Resource.Id.Comments);
 
+			bookBTN = FindViewById<Button> (Resource.Id.Book);
+
 			reviewsBTN.Click += ReviewsBTN_Click;
 
 			commentsBTN.Click += CommentsBTN_Click;
+
+			bookBTN.Click += BookBTN_Click;
 
 			initBandInfo ();
 			initEvents ();
 			initRating ();
 
+		}
+
+		void BookBTN_Click (object sender, EventArgs e)
+		{
+			Intent intent = new Intent (this, typeof (BookActivity));
+			intent.PutExtra ("name", band.Name);
+			intent.PutExtra ("id", userId);
+
+			StartActivity (intent);
 		}
 
 		void ReviewsBTN_Click (object sender, EventArgs e)

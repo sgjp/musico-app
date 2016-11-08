@@ -860,8 +860,8 @@ namespace musico
 			// aapt resource value: 0x7f0a004e
 			public const int AddReview = 2131361870;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int AvgPrice = 2131361874;
+			// aapt resource value: 0x7f0a0051
+			public const int AvgPrice = 2131361873;
 			
 			// aapt resource value: 0x7f0a0050
 			public const int BandList = 2131361872;
@@ -869,65 +869,74 @@ namespace musico
 			// aapt resource value: 0x7f0a003f
 			public const int BandName = 2131361855;
 			
+			// aapt resource value: 0x7f0a0058
+			public const int Book = 2131361880;
+			
 			// aapt resource value: 0x7f0a0044
 			public const int Comment = 2131361860;
 			
+			// aapt resource value: 0x7f0a005c
+			public const int Comments = 2131361884;
+			
+			// aapt resource value: 0x7f0a005b
+			public const int CommentsTotal = 2131361883;
+			
+			// aapt resource value: 0x7f0a005a
+			public const int CommentsTotalLbl = 2131361882;
+			
+			// aapt resource value: 0x7f0a0082
+			public const int DateLabel = 2131361922;
+			
 			// aapt resource value: 0x7f0a0056
-			public const int Comments = 2131361878;
+			public const int DateLbl = 2131361878;
+			
+			// aapt resource value: 0x7f0a0057
+			public const int DateSearch = 2131361879;
 			
 			// aapt resource value: 0x7f0a0055
-			public const int CommentsTotal = 2131361877;
-			
-			// aapt resource value: 0x7f0a0054
-			public const int CommentsTotalLbl = 2131361876;
-			
-			// aapt resource value: 0x7f0a007e
-			public const int DateLabel = 2131361918;
-			
-			// aapt resource value: 0x7f0a007f
-			public const int DateSearch = 2131361919;
+			public const int Description = 2131361877;
 			
 			// aapt resource value: 0x7f0a004c
 			public const int Enthusiasm = 2131361868;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int Events = 2131361885;
+			// aapt resource value: 0x7f0a0061
+			public const int Events = 2131361889;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int FbImageBtn = 2131361881;
+			// aapt resource value: 0x7f0a005e
+			public const int FbImageBtn = 2131361886;
 			
 			// aapt resource value: 0x7f0a004b
 			public const int Flexibility = 2131361867;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int Genre = 2131361875;
+			// aapt resource value: 0x7f0a0052
+			public const int Genre = 2131361874;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int GenreLabel = 2131361909;
+			// aapt resource value: 0x7f0a0079
+			public const int GenreLabel = 2131361913;
 			
 			// aapt resource value: 0x7f0a0040
 			public const int Location = 2131361856;
 			
+			// aapt resource value: 0x7f0a0081
+			public const int LocationLabel = 2131361921;
+			
 			// aapt resource value: 0x7f0a007d
-			public const int LocationLabel = 2131361917;
+			public const int MaxPriceLabel = 2131361917;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int MaxPriceLabel = 2131361913;
+			// aapt resource value: 0x7f0a007f
+			public const int MaxPriceValue = 2131361919;
 			
-			// aapt resource value: 0x7f0a007b
-			public const int MaxPriceValue = 2131361915;
-			
-			// aapt resource value: 0x7f0a0076
-			public const int MinPriceLabel = 2131361910;
-			
-			// aapt resource value: 0x7f0a0078
-			public const int MinPriceValue = 2131361912;
+			// aapt resource value: 0x7f0a007a
+			public const int MinPriceLabel = 2131361914;
 			
 			// aapt resource value: 0x7f0a007c
-			public const int MinRatingLabel = 2131361916;
+			public const int MinPriceValue = 2131361916;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int Name = 2131361907;
+			// aapt resource value: 0x7f0a0080
+			public const int MinRatingLabel = 2131361920;
+			
+			// aapt resource value: 0x7f0a0077
+			public const int Name = 2131361911;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int NameLabel = 2131361859;
@@ -935,8 +944,8 @@ namespace musico
 			// aapt resource value: 0x7f0a0048
 			public const int Overall = 2131361864;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int Price = 2131361908;
+			// aapt resource value: 0x7f0a0078
+			public const int Price = 2131361912;
 			
 			// aapt resource value: 0x7f0a004a
 			public const int Punctuality = 2131361866;
@@ -947,32 +956,32 @@ namespace musico
 			// aapt resource value: 0x7f0a0049
 			public const int Quality = 2131361865;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int Rating = 2131361880;
+			// aapt resource value: 0x7f0a0053
+			public const int Rating = 2131361875;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int Requeriments = 2131361884;
+			// aapt resource value: 0x7f0a0060
+			public const int Requeriments = 2131361888;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int RequerimentsTitle = 2131361883;
+			// aapt resource value: 0x7f0a0054
+			public const int RequerimentsTitle = 2131361876;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int Reviews = 2131361887;
+			// aapt resource value: 0x7f0a0063
+			public const int Reviews = 2131361891;
 			
 			// aapt resource value: 0x7f0a004d
 			public const int Similarity = 2131361869;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int TopListView = 2131361891;
+			// aapt resource value: 0x7f0a0067
+			public const int TopListView = 2131361895;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int TopUsersListView = 2131361893;
+			// aapt resource value: 0x7f0a0069
+			public const int TopUsersListView = 2131361897;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int Type = 2131361873;
+			// aapt resource value: 0x7f0a0059
+			public const int Type = 2131361881;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int YoImageBtn = 2131361882;
+			// aapt resource value: 0x7f0a005f
+			public const int YoImageBtn = 2131361887;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int action_bar = 2131361820;
@@ -1016,17 +1025,17 @@ namespace musico
 			// aapt resource value: 0x7f0a0016
 			public const int beginning = 2131361814;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int btn_cancel = 2131361901;
+			// aapt resource value: 0x7f0a0071
+			public const int btn_cancel = 2131361905;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int btn_login = 2131361900;
+			// aapt resource value: 0x7f0a0070
+			public const int btn_login = 2131361904;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int btn_search = 2131361894;
+			// aapt resource value: 0x7f0a006a
+			public const int btn_search = 2131361898;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int btn_signup = 2131361902;
+			// aapt resource value: 0x7f0a0072
+			public const int btn_signup = 2131361906;
 			
 			// aapt resource value: 0x7f0a002d
 			public const int checkbox = 2131361837;
@@ -1076,26 +1085,26 @@ namespace musico
 			// aapt resource value: 0x7f0a003d
 			public const int imageView1 = 2131361853;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int input = 2131361896;
+			// aapt resource value: 0x7f0a006c
+			public const int input = 2131361900;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int lbl = 2131361904;
+			// aapt resource value: 0x7f0a0074
+			public const int lbl = 2131361908;
 			
 			// aapt resource value: 0x7f0a003c
 			public const int linearLayout2 = 2131361852;
 			
-			// aapt resource value: 0x7f0a0057
-			public const int linearLayout3 = 2131361879;
+			// aapt resource value: 0x7f0a005d
+			public const int linearLayout3 = 2131361885;
 			
 			// aapt resource value: 0x7f0a003e
 			public const int linearLayout4 = 2131361854;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int linearLayout5 = 2131361886;
-			
 			// aapt resource value: 0x7f0a0062
-			public const int linearLayout6 = 2131361890;
+			public const int linearLayout5 = 2131361890;
+			
+			// aapt resource value: 0x7f0a0066
+			public const int linearLayout6 = 2131361894;
 			
 			// aapt resource value: 0x7f0a0006
 			public const int listMode = 2131361798;
@@ -1103,29 +1112,29 @@ namespace musico
 			// aapt resource value: 0x7f0a0029
 			public const int list_item = 2131361833;
 			
+			// aapt resource value: 0x7f0a006f
+			public const int ll_logininfo = 2131361903;
+			
+			// aapt resource value: 0x7f0a006d
+			public const int login_accounts = 2131361901;
+			
+			// aapt resource value: 0x7f0a006e
+			public const int login_password = 2131361902;
+			
 			// aapt resource value: 0x7f0a006b
-			public const int ll_logininfo = 2131361899;
+			public const int loginpage = 2131361899;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int login_accounts = 2131361897;
-			
-			// aapt resource value: 0x7f0a006a
-			public const int login_password = 2131361898;
-			
-			// aapt resource value: 0x7f0a0067
-			public const int loginpage = 2131361895;
-			
-			// aapt resource value: 0x7f0a007a
-			public const int maxPriceSeekBar = 2131361914;
+			// aapt resource value: 0x7f0a007e
+			public const int maxPriceSeekBar = 2131361918;
 			
 			// aapt resource value: 0x7f0a0018
 			public const int middle = 2131361816;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int minPriceSeekBar = 2131361911;
+			// aapt resource value: 0x7f0a007b
+			public const int minPriceSeekBar = 2131361915;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int myButton = 2131361903;
+			// aapt resource value: 0x7f0a0073
+			public const int myButton = 2131361907;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int never = 2131361810;
@@ -1148,11 +1157,11 @@ namespace musico
 			// aapt resource value: 0x7f0a0045
 			public const int rateLbl = 2131361861;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int reccomendedListView = 2131361889;
+			// aapt resource value: 0x7f0a0065
+			public const int reccomendedListView = 2131361893;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int reviews = 2131361905;
+			// aapt resource value: 0x7f0a0075
+			public const int reviews = 2131361909;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int search_badge = 2131361842;
@@ -1211,17 +1220,17 @@ namespace musico
 			// aapt resource value: 0x7f0a0042
 			public const int tableRow1 = 2131361858;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int text1 = 2131361906;
+			// aapt resource value: 0x7f0a0076
+			public const int text1 = 2131361910;
 			
 			// aapt resource value: 0x7f0a004f
 			public const int textView1 = 2131361871;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int textView2 = 2131361888;
-			
 			// aapt resource value: 0x7f0a0064
-			public const int textView3 = 2131361892;
+			public const int textView2 = 2131361892;
+			
+			// aapt resource value: 0x7f0a0068
+			public const int textView3 = 2131361896;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int title = 2131361835;
@@ -1349,46 +1358,49 @@ namespace musico
 			public const int BandList = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int CommentRow = 2130968603;
+			public const int Book = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int Comments = 2130968604;
+			public const int CommentRow = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int Detail = 2130968605;
+			public const int Comments = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int Home = 2130968606;
+			public const int Detail = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int Login = 2130968607;
+			public const int Home = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int Main = 2130968608;
+			public const int Login = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int ReviewDetail = 2130968609;
+			public const int Main = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int ReviewRow = 2130968610;
+			public const int ReviewDetail = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int Reviews = 2130968611;
+			public const int ReviewRow = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int Row = 2130968612;
+			public const int Reviews = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int RowBandList = 2130968613;
+			public const int Row = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int Search = 2130968614;
+			public const int RowBandList = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int SpinnerItem = 2130968615;
+			public const int Search = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int support_simple_spinner_dropdown_item = 2130968616;
+			public const int SpinnerItem = 2130968616;
+			
+			// aapt resource value: 0x7f040029
+			public const int support_simple_spinner_dropdown_item = 2130968617;
 			
 			static Layout()
 			{
