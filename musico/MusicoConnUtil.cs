@@ -188,7 +188,8 @@ namespace Musico
 
 			var values = new Dictionary<string,string> {
 				{ "description", description },
-				{ "date", date.ToString ("yyyy-MM-dd")}
+				{ "date", date.ToString ("yyyy-MM-dd")},
+				{ "userId", userId}
 			};
 
 			var content = new FormUrlEncodedContent (values);
