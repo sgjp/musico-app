@@ -35,7 +35,6 @@ namespace musico
 		public RatingBar ratingRB;
 
 		private string userId;
-		private string bandId;
 		private string bandName;
 
 		public string description;
@@ -49,11 +48,11 @@ namespace musico
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			
-			userId = this.Intent.GetStringExtra ("userId");
-			bandId = this.Intent.GetStringExtra ("id");
+
+			userId = this.Intent.GetStringExtra ("id");
 			bandName = this.Intent.GetStringExtra ("name");
 
-			RequestWindowFeature (WindowFeatures.NoTitle);
+            RequestWindowFeature (WindowFeatures.NoTitle);
 
 			SetContentView (Resource.Layout.Book);
 
@@ -85,7 +84,7 @@ namespace musico
 					return;
 				}
 			}
-			int result = await MusicoConnUtil.AddBooking (description, Convert.ToDateTime (dateString), userId, bandId);
+			int result = await MusicoConnUtil.AddBooking (description, Convert.ToDateTime (dateString), userId, band.Id);
 
 			if (result<0){
 				Toast.MakeText (this, "An error has ocurred, please try again", ToastLength.Short).Show ();
